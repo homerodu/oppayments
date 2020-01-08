@@ -93,9 +93,9 @@ public class PaymentsController {
 		Map<String, Object> mapEndpoints=new HashMap<String, Object>();
 		SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd HH:mm:ss z");
 		Date date = new Date(System.currentTimeMillis());
-		mapEndpoints.put("Greetings","Welcome to Openpay payments:");
-		mapEndpoints.put("Current Time:",formatter.format(date));
-		mapEndpoints.put("Visitor:",counter++);
+		mapEndpoints.put("Greetings: ","Welcome to Openpay payments:");
+		mapEndpoints.put("Current Time: ",formatter.format(date));
+		mapEndpoints.put("Visitor: ",counter++);
 		Conversion conversion=new Conversion();
 		String jsonResponse=conversion.convierteMapaJsonString(mapEndpoints);
 		conversion=null;
